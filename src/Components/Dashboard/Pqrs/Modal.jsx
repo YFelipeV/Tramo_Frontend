@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import { getPqrsId, udpatePqrs } from "../../../Data/Pqrs";
 
 function Modal({ userId }) {
-  console.log(userId)
-  const [data, setData] = useState({});
-  const [respuesta, setrespuesta] = useState("")
+
+  const [data, setData] = useState([]);
+  const [respuesta, setrespuesta] = useState("");
+  const [ids, setid] = useState("");
 
   useEffect(() => {
     const loadData = async () => {
       const response = await getPqrsId(userId);
+      const id=await response[0]._id;
+      setid(id);
       setData(response);
     };
 
@@ -16,7 +19,8 @@ function Modal({ userId }) {
       loadData();
     }
   }, [userId]);
-console.log(data.perfil)
+ 
+ 
   return userId ? (
     <tr>
       <td>
@@ -44,9 +48,12 @@ console.log(data.perfil)
                 ></button>
               </div>
               <div className="modal-body">
-                <p className="text-justify">
-                  {data.motivoRechazoCON}
-                </p>
+              <p className="fs-5">Motivo:</p>
+                {data.map((item) => (
+                 
+                  <p className="text-justify">{item.motivo}</p>
+                ))}
+
                 <textarea
                   name=""
                   id=""
@@ -56,7 +63,12 @@ console.log(data.perfil)
                   placeholder="Escribe La Respuesta..."
                   onChange={(e) => setrespuesta(e.target.value)}
                 ></textarea>
-                <button onClick={()=>udpatePqrs(id,respuesta)} className="btn btn-primary w-100 my-1">Enviar</button>
+                <button
+                  onClick={() => udpatePqrs(ids, respuesta)}
+                  className="btn btn-primary w-100 my-1"
+                >
+                  Enviar
+                </button>
               </div>
             </div>
           </div>

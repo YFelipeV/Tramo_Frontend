@@ -63,7 +63,7 @@ function EmpresaHabilitadosItems({ data }) {
               </td>
               <td className="text-center align-middle filas_info_corta">
                 <p className="font-weight-bold text-xs font-weight-bold m-0">
-                  <b>Calificacion {calificacionPJU}</b>
+                  <b>Calificacion </b>
                 </p>
                 <div className="d-flex justify-content-center align-items-center cal-star">
                   <ReactStarts edit={false} value={calificacionPJU} size={28} />

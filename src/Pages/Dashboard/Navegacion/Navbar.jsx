@@ -1,7 +1,7 @@
 import Sidebar from "./Sidebar";
 
 import "../../../css/styleAdmin.css";
-import profile from "../../../assets/icons/profile.jpg";
+import profile from "../../../assets/icons/avatar.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

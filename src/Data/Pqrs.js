@@ -11,6 +11,8 @@ export const getPqrsId = async (id) => {
 };
 export const udpatePqrs = async (id,respuesta) => {
   try {
+    console.log(id)
+    console.log(respuesta)
     const response = await axios.put(`${URL}pqrs/${id}`,{respuesta});
     if (response.status == 200) {
       Swal.fire({

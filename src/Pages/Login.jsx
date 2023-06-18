@@ -27,7 +27,7 @@ function Login() {
     <div className="containerp  " style={{ height: "100vh" }}>
       <div className="container w-75 shadow-login">
         <div className="row movil ">
-          <div className="col-lg-6 colorlogin ">
+          <div className=" col-sm-12  col-lg-6 colorlogin ">
             <div className="card-body p-md-2 mx-md-4 movilP ">
               <div className="text-center">
                 <a href="/">
@@ -77,10 +77,12 @@ function Login() {
               </form>
             </div>
           </div>
-          <div className="col-lg-6  contan1 d-flex align-items-end justify-content-end">
-            <picture className="d-flex mb-4 justify-content-end ">
-              <img src={login} width={"100%"} alt="" />
-            </picture>
+          <div className="  d-none d-sm-flex col-lg-6  contan1 d-flex align-items-end justify-content-end">
+            <div className="d-flex mb-4 justify-content-end  ">
+              <picture className="d-flex mb-4 justify-content-end ">
+                <img src={login} width={"100%"} className="d-none d-sm-block" alt="" />
+              </picture>
+            </div>
           </div>
         </div>
       </div>

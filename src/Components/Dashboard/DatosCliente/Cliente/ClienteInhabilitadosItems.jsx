@@ -66,7 +66,7 @@ function ClienteInhabilitadosItems({ ClienteInhabilitado }) {
             </td>
             <td className="text-center align-middle filas_info_larga">
               <p className="font-weight-bold text-xs font-weight-bold m-0">
-                <b>Calificacion {calificacionPNA}</b>
+                <b>Calificacion </b>
               </p>
               <div className="d-flex justify-content-center align-items-center cal-star">
                 <ReactStarts edit={false} value={calificacionPNA} size={28} />
