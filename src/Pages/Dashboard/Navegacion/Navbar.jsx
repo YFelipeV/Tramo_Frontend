@@ -4,6 +4,7 @@ import profile from "../../../assets/icons/avatar.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import jwtDecode from "jwt-decode";
 function Navbar() {
   const navigate = useNavigate();
   const [openMenu, setOpenSidebar] = useState(false);
@@ -16,9 +17,12 @@ function Navbar() {
       document.querySelector("#hamburguer button").classList.toggle("open");
     }
   }
-
-  const token = localStorage.getItem("token");
-  console.log(token);
+   useEffect(()=>{
+    const token = localStorage.getItem("token");
+    const jwt2=jwtDecode(token)
+    setusuario(jwt2.nameAdmin)
+   },[])
+ 
 
   return (
     <>
@@ -57,7 +61,7 @@ function Navbar() {
                 ></img>
 
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                 Admin
+                 {usuario ? usuario:"Admin"}
                 </span>
               </a>
 
