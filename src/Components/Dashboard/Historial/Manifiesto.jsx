@@ -6,7 +6,6 @@ import QRCode from "react-qr-code";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { NumeroALetras } from "./Num";
-import Swal from "sweetalert2";
 import moment from 'moment'
 
 function Manifiesto() {

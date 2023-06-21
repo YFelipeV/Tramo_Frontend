@@ -66,7 +66,7 @@ function Minhabilitar({ getid }) {
                 }}
                 className="btn btn-primary"
               >
-                Confirmar Rechazo y enviar motivo
+                Confirmar inhabilitacion
               </button>
             </div>
           </div>
