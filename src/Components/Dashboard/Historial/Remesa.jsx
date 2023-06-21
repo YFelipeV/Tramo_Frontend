@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/icons/tranporte.png";
-import logo2 from "../../../assets/icons/logofin.png";
+import logo2 from "../../../assets/icons/Logofin.png";
 import "./remesa.css";
 import { useParams } from "react-router-dom";
 import { getRemesa } from "../../../Data/Historial";
