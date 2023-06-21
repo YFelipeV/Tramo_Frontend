@@ -33,7 +33,8 @@ export const updateSolicitudesPendientes = async (_id) => {
     const response = await axios.put(`${URL}admin/aceptarSoli/${_id}`);
     console.log(response)
     if (response.status === 200) {
-      location.reload();
+      window.location.reload();
+     
     }
   } catch (error) {
     console.log(error);
@@ -51,7 +52,7 @@ export const putSolicitudesRechazar = async (data) => {
     });
     console.log(response)
     if (response.status === 200) {
-      location.reload()
+      window.location.reload();
     }
   } catch (error) {
     if (error.response.data) {
