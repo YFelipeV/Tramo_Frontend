@@ -388,7 +388,7 @@ function MasDatos({data}) {
                               icon: "success",
                               title: "Habilitado Correctamente",
                             });
-                            button: updateSolicitudesPendientes(conductor.conductorSolicitud._id),location.reload();
+                            button: updateSolicitudesPendientes(conductor.conductorSolicitud._id);
                           }
                         });
                       }}>

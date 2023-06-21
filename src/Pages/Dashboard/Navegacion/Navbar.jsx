@@ -1,12 +1,8 @@
 import Sidebar from "./Sidebar";
-
 import "../../../css/styleAdmin.css";
 import profile from "../../../assets/icons/avatar.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-
 
 function Navbar() {
   const navigate = useNavigate();
@@ -20,14 +16,9 @@ function Navbar() {
       document.querySelector("#hamburguer button").classList.toggle("open");
     }
   }
-  
-//  useEffect(()=>{
-//   const token=localStorage.getItem("token")
- 
-//   const decode=jwtDecode(token);
-//   console.log(decode)
-//    setusuario(decode.nameAdmin)
-//  },[])
+
+  const token = localStorage.getItem("token");
+  console.log(token);
 
   return (
     <>
@@ -66,8 +57,7 @@ function Navbar() {
                 ></img>
 
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                  {/* {decodedToken.name} */}
-                   {/* {usuario}  */}
+                 Admin
                 </span>
               </a>
 
