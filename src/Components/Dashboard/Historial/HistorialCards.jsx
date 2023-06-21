@@ -14,14 +14,14 @@ function HistorialCards() {
 
     loadHistorial();
   }, []);
-  console.log(Historial);
+ 
 
   return (
     <>
-      {Historial.map(({ usuario, pedidoManifesto }) => (
-        <tr key={usuario._id}>
+      {Historial.map(({ usuario, pedidoManifesto ,index}) => (
+        <tr key={index}>
           <td className="text_movil filas_info_corta text-center pt-4  order-2">
-            {usuario.nombrePNA}
+            {usuario.nombrePNA ? usuario.nombrePNA :usuario.nombreEmpresa }
           </td>
 
           <td className="text_movil filas_info_corta text-center p-4 order-0 ">
@@ -43,6 +43,14 @@ function HistorialCards() {
                 style={{ fontSize: "14px" }}
               >
                 Ver manifiesto
+              </button>
+            </Link>
+            <Link to={`/remesa/${pedidoManifesto._id}`} target="blank">
+              <button
+                className="btn btn-primary w-75 mt-2 px-4"
+                style={{ fontSize: "14px" }}
+              >
+                Ver Remesa
               </button>
             </Link>
           </td>

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { NumeroALetras } from "./Num";
 import Swal from "sweetalert2";
+import moment from 'moment'
 
 function Manifiesto() {
   const [manifiesto, setmanifiesto] = useState({});
@@ -17,6 +18,8 @@ function Manifiesto() {
   const [vehiculo, setvehiculo] = useState({});
   const [tenedor, settenedor] = useState({});
   const [usuario, setusuario] = useState({});
+  const [ubicacion, setubicacion] = useState({});
+  const [fecha, saetFecha] = useState("");
 
   const [propietario, setpropietario] = useState({});
 
@@ -28,6 +31,7 @@ function Manifiesto() {
       );
       setmanifiesto(data);
       const conductor = await data.pedido.id_conductor;
+      const ubicacion = await data.pedido;
       const carga = await data.pedido.carga;
       const vehiculo = await data.vehiculo;
       const tenedor = await data.tenedor;
@@ -46,7 +50,11 @@ function Manifiesto() {
       setpropietario(propietario);
       setdestinatario(destinatario);
       setcarga({ ...carga, valor, observaciones, pagoDescarga, pagoCarga });
+      setubicacion(ubicacion)
       setusuario(usuario);
+      const fecha=conductor.createdAt;
+      const formattedDate = moment(fecha).format("DD-MM-YYYY  ");
+      saetFecha(formattedDate);
     };
 
     getManifiesto();
@@ -137,16 +145,16 @@ function Manifiesto() {
 
           <tr className="text-center">
             <td className="bordes">
-              <p>06/05/2022</p>
+              <p>{fecha}</p>
             </td>
             <td className="bordes" colSpan={2}>
               <p>GENERAL</p>
             </td>
             <td className="bordes" colSpan={2}>
-              <p>Popayan-Cauca</p>
+              <p>{ubicacion.addressInicial}</p>
             </td>
             <td className="bordes" colSpan={2}>
-              <p>El Tambo-Cauca</p>
+              <p>{ubicacion.addressFinal}</p>
             </td>
           </tr>
           <tr className="bordes">

@@ -3,12 +3,15 @@ import Sidebar from "./Sidebar";
 import "../../../css/styleAdmin.css";
 import profile from "../../../assets/icons/avatar.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+
 
 function Navbar() {
   const navigate = useNavigate();
   const [openMenu, setOpenSidebar] = useState(false);
+  const [usuario, setusuario] = useState("");
 
   function openSidebar() {
     setOpenSidebar(true);
@@ -17,6 +20,15 @@ function Navbar() {
       document.querySelector("#hamburguer button").classList.toggle("open");
     }
   }
+  
+//  useEffect(()=>{
+//   const token=localStorage.getItem("token")
+ 
+//   const decode=jwtDecode(token);
+//   console.log(decode)
+//    setusuario(decode.nameAdmin)
+//  },[])
+
   return (
     <>
       <header
@@ -55,7 +67,7 @@ function Navbar() {
 
                 <span className="d-none d-md-block dropdown-toggle ps-2">
                   {/* {decodedToken.name} */}
-                  felipe
+                   {/* {usuario}  */}
                 </span>
               </a>
 

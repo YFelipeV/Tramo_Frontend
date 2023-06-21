@@ -31,9 +31,9 @@ export const getSolicitudesPendientesid = async (id) => {
 export const updateSolicitudesPendientes = async (_id) => {
   try {
     const response = await axios.put(`${URL}admin/aceptarSoli/${_id}`);
+    console.log(response)
     if (response.status === 200) {
-      location.reload()
-      return response;
+      location.reload();
     }
   } catch (error) {
     console.log(error);
@@ -49,10 +49,9 @@ export const putSolicitudesRechazar = async (data) => {
     const response = await axios.put(`${URL}admin/rechazarSolicitud/${_id}`, {
       motivoRechazoCON,
     });
+    console.log(response)
     if (response.status === 200) {
       location.reload()
-
-      return response;
     }
   } catch (error) {
     if (error.response.data) {
