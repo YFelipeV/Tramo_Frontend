@@ -59,7 +59,7 @@ function Contact() {
                         <p className="mt-30 font colortxt">
                           {" "}
                           Dejanos saber tus dudas, o inconvenientes que hayas
-                          tenido durante el uso de nuestra aplicacion.
+                          tenido durante el uso de nuestra aplicación.
                         </p>
                       </div>
 

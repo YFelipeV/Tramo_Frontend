@@ -4,7 +4,7 @@ import jhon from "../../assets/Integrantes/JhonSF.png";
 import felipeS from "../../assets/Integrantes/SeguraSF.png";
 import carlos from "../../assets/Integrantes/Carlos_SF-01.png";
 import yonathan from "../../assets/Integrantes/YonatanSF.png";
-import hernan from "../../assets/Integrantes/HernanSF2.png";
+import hernan from "../../assets/Integrantes/Hernan_sf.png";
 import facebook from "../../assets/icons/facebook.svg";
 import ins from "../../assets/icons/instagram.svg";
 import wasap from "../../assets/icons/whatsapp.svg";

@@ -104,6 +104,7 @@ function Footer() {
                 </li>
                 <li target="_blank" className="footer__list-item me-2">
                   <a
+                    target="_blank"
                     href="https://api.whatsapp.com/send?phone=573226178911"
                     className="footer__list-link"
                   >
@@ -127,7 +128,7 @@ function Footer() {
               </ul>
               <div className="eslogan-footeer mt-3">
                 <p>
-                  "Llegamos a todos los rincones <br></br> del pais, para
+                  "Llegamos a todos los rincones <br></br> del país, para
                   sacarte de apuros en cualquier situación"
                 </p>
               </div>

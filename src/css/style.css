@@ -123,8 +123,8 @@ body {
 }
 
 .badge {
-  font-size: clamp(13px, 1vw, 20px);
-  max-width: 330px;
+  font-size: clamp(14px, 1vw, 20px);
+  max-width: 355px;
 }
 .maquina {
   display: block;

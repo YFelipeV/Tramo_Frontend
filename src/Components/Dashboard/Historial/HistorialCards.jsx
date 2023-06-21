@@ -40,14 +40,14 @@ function HistorialCards() {
             <Link to={`/manifiesto/${pedidoManifesto._id}`} target="blank">
               <button
                 className="btn bg-orange-btn px-4"
-                style={{ fontSize: "14px" }}
+                style={{ fontSize: "14px"}}
               >
                 Ver manifiesto
               </button>
             </Link>
             <Link to={`/remesa/${pedidoManifesto._id}`} target="blank">
               <button
-                className="btn btn-primary w-75 mt-2 px-4"
+                className="btn bg-blue mt-2 px-4"
                 style={{ fontSize: "14px" }}
               >
                 Ver Remesa

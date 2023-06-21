@@ -46,9 +46,9 @@ function Remesa() {
         <table className="table border-white mt-4 ">
           <thead>
             <tr>
-              <td colSpan={4} rowSpan={2} className="text-start fw-bold">
+              <td colSpan={4} rowSpan={2} className="text-center fw-bold">
                 <img className="logo1"  src={logo2} alt="logo" style={{ maxWidth: "160px" }} />
-                <br /> Transporte y Movilidad
+                <p  style={{fontSize:"8px"}}> Transporte y Movilidad</p>
               </td>
               <td colSpan={4} rowSpan={2}>
                 <tr className="d-flex justify-content-center">
@@ -64,8 +64,8 @@ function Remesa() {
                 <img
                   src={logo}
                   alt="logo"
-                  className="logo2"
-                  style={{ minHeight: "60px", maxWidth: "260px" }}
+                  className="logo2 mb-4 mb-md-0"
+                  style={{ minHeight: "30x", maxWidth: "260px" }}
                 />
               </th>
             </tr>
@@ -154,7 +154,7 @@ function Remesa() {
         <div className="d-flex justify-content-center mt-2">
           {!isLoading ? (
             <button
-              className="btn btn-primary w-50 "
+              className="btn btn-primary w-50 mb-5"
               onClick={() => {
                 setIsLoading(true);
                 setTimeout(() => {
