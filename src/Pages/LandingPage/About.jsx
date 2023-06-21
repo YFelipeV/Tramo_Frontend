@@ -61,13 +61,13 @@ function About() {
             </div>
             <div className="col-md-6 text-center text-md-start offset-md-1 order-2">
               <h6 className="fw-bold fs-2 lh-sm text-sm-center text-md-start dark">
-                Mision
+                Misión
                 <br />
               </h6>
               <p className="my-4 pe-xl-5 fon text-justify fs-5  text-secondary">
-                Nuestra empresa, está enfocada en mejorar la agilidad al
+                Nuestra empresa está enfocada en mejorar la agilidad al
                 solicitar un servicio de transporte de carga en el departamento
-                del Cauca, vinculando el sector transporte para impulsar su
+                del Cauca, vinculando el sector de transporte para impulsar su
                 economía del sector.
               </p>{" "}
             </div>
@@ -82,7 +82,7 @@ function About() {
           <div className="row justify-content-center align-items-center">
             <div className="col-sm-12 col-md-6 order-sm-3 order-md-1">
               <h6 className="fw-bold fs-2  X f lh-sm mt-5  text-sm-center  dark">
-                Vision
+                Visión
               </h6>
               <p className="my-5 pe-xl-4  text-justify fs-5 text-secondary">
                 En cinco años queremos visualizarnos como una de los mejores
