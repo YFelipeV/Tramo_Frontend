@@ -63,7 +63,7 @@ function Manifiesto() {
     <>
       <div className="p-3 Manifiesto  transformText  ">
         <table>
-          <tr>
+          <tr className="head">
             <td colSpan={2}>
               <img src={logo} alt="" style={{ maxWidth: "120px" }} />
               <img src={ministerio} alt="" style={{ maxWidth: "140px" }} />
