@@ -42,8 +42,8 @@ function Remesa() {
 
   return (
     <>
-      <div className="container  mt-4">
-        <table className="table border-white mt-4 ">
+      <div className="container  mt-4 remesa">
+        <table className="table border-white mt-4  ">
           <thead>
             <tr>
               <td colSpan={4} rowSpan={2} className="text-center fw-bold">

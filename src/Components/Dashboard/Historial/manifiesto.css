@@ -1,23 +1,37 @@
 .Manifiesto{
-    font-size: 10px;
+    font-size: 8px;
+    
+}
+.Manifiesto{
+    position: relative;
+    top: -100px;
 }
 .Manifiesto p{
     font-size: 11px;
     margin: 1px;
     padding: 0;
 }
+.head{
+    position: relative;
+    top:20px ;
+}
 
 .Manifiesto .texto-largo{
-    font-size: 9px;
+    font-size: 7px;
 }
 .transformText{
     text-transform: uppercase;
   }
 
+  .qr{
+    position: relative;
+    bottom: -10px;
+  }
 
 .Manifiesto .subtitulos{
     font-size: 12px;
     font-weight: bold;
+    
 }
 
 .Manifiesto .bordes{
@@ -38,3 +52,4 @@
 .Manifiesto .bordes td .border-right{
     border-right: 1px solid black;
 }
+

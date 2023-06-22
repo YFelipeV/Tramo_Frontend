@@ -6,7 +6,6 @@ import QRCode from "react-qr-code";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { NumeroALetras } from "./Num";
-import Swal from "sweetalert2";
 import moment from 'moment'
 
 function Manifiesto() {
@@ -64,7 +63,7 @@ function Manifiesto() {
     <>
       <div className="p-3 Manifiesto  transformText  ">
         <table>
-          <tr>
+          <tr className="head">
             <td colSpan={2}>
               <img src={logo} alt="" style={{ maxWidth: "120px" }} />
               <img src={ministerio} alt="" style={{ maxWidth: "140px" }} />
@@ -117,6 +116,7 @@ function Manifiesto() {
                 }}
               >
                 <QRCode
+                className="qr"
                   value={`https://tramo.vercel.app/manifiesto/${id} `}
                   style={{ maxWidth: "120px" }}
                 />
