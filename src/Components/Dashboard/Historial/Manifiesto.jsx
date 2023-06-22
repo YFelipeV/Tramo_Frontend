@@ -116,6 +116,7 @@ function Manifiesto() {
                 }}
               >
                 <QRCode
+                className="qr"
                   value={`https://tramo.vercel.app/manifiesto/${id} `}
                   style={{ maxWidth: "120px" }}
                 />

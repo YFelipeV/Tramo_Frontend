@@ -9,7 +9,7 @@
     height: 100px;
   }
   
-  table{
+  .remesa{
     text-transform: uppercase;
   }
   @media (max-width: 780px) {
