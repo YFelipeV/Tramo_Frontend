@@ -4,7 +4,7 @@
 }
 .Manifiesto{
     position: relative;
-    top: -85px;
+    top: -100px;
 }
 .Manifiesto p{
     font-size: 11px;
@@ -17,7 +17,7 @@
 }
 
 .Manifiesto .texto-largo{
-    font-size: 9px;
+    font-size: 7px;
 }
 .transformText{
     text-transform: uppercase;
