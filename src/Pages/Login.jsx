@@ -25,8 +25,8 @@ function Login() {
 
   return (
     <div className="containerp  " style={{ height: "100vh" }}>
-      <div className="container w-50 shadow-login">
-        <div className="row movil ">
+      <div className="container w-75 shadow-login rounded-4">
+        <div className="row movil" >
           <div className=" col-sm-12  col-lg-6 colorlogin ">
             <div className="card-body p-md-2 mx-md-4 movilP ">
               
