@@ -64,7 +64,7 @@ function Minhabilitar({ getid }) {
                     }
                   });
                 }}
-                className="btn btn-primary"
+                className="btn bg-red mx-auto"
               >
                 Confirmar inhabilitacion
               </button>

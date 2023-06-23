@@ -70,9 +70,9 @@ function Empresa({ getid }) {
                     }
                   });
                 }}
-                className="btn btn-primary w-75"
+                className="btn bg-red w-75"
               >
-                Confirmar Rechazo y enviar motivo
+                Inhabilitar y enviar motivo
               </button>
             </div>
           </div>

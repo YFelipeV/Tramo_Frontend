@@ -3,16 +3,75 @@ import youtube from "../../assets/icons/youtube.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import ins from "../../assets/icons/instagram.svg";
 import wasap from "../../assets/icons/whatsapp.svg";
-import telefono from "../../assets/icons/telephone.svg";
-import email from "../../assets/icons/email.svg";
+import telefonoimg from "../../assets/icons/telephone.svg";
+import emailimg from "../../assets/icons/email.svg";
 import celular from "../../assets/icons/telefono-inteligente.gif";
 import Preguntas from "./Preguntas";
 import { Link } from "react-router-dom";
 /* Impor Restaurar <Pagina></Pagina */
 import restaurar from "./VolverPosition.js";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 function Contact() {
   restaurar();
+
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [mensaje, setMensaje] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!nombre || !email || !telefono || !mensaje) {
+      Swal.fire({
+        icon: "warning",
+        title: "Completa todos los campos",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/xdovrlwb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nombre,
+          email,
+          telefono,
+          mensaje,
+        }),
+      });
+
+      if (response.ok) {
+        setNombre("");
+        setEmail("");
+        setTelefono("");
+        setMensaje("");
+
+        Swal.fire({
+          icon: "success",
+          title: "Mensaje enviado con éxito",
+          text:"Nos pondremos en contacto contigo lo mas pronto posible",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      } else {
+        throw new Error("Error al enviar el formulario");
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Error al enviar el formulario",
+        text: error.message,
+      });
+    }
+  };
 
   return (
     <>
@@ -26,7 +85,10 @@ function Contact() {
 
       <div className="d-flex justify-content-center align-items-end mt-5">
         <img src={celular} alt="" width="68px" height="68px"></img>
-        <h1 className="fw-bold fs-2 dark lh-sm align-items-end font" id="contacto">
+        <h1
+          className="fw-bold fs-2 dark lh-sm align-items-end font"
+          id="contacto"
+        >
           Contactanos
         </h1>
       </div>
@@ -142,7 +204,7 @@ function Contact() {
                       <div className="single-contact-info d-flex">
                         <ul className="footer__list">
                           <li className="footer__list-item">
-                            <img src={email} alt=""></img>
+                            <img src={emailimg} alt=""></img>
                             <a
                               target="_blank"
                               href="mailto:Tramosas2023@gmail.com"
@@ -155,7 +217,7 @@ function Contact() {
                           <li className="footer__list-item">
                             <img
                               className="text-danger"
-                              src={telefono}
+                              src={telefonoimg}
                               alt=""
                             ></img>
                             <a
@@ -169,7 +231,7 @@ function Contact() {
                           <li className="footer__list-item">
                             <img
                               className="text-danger"
-                              src={telefono}
+                              src={telefonoimg}
                               alt=""
                             ></img>
                             <a
@@ -194,45 +256,54 @@ function Contact() {
                         action="https://formspree.io/f/xdovrlwb"
                         method="POST"
                         className="needs-validation"
-                        novalidate
+                        noValidate
+                        onSubmit={handleSubmit}
                       >
                         <input
-                          name="Nombre"
+                          name="nombre"
                           type="text"
                           className="form-control"
-                          id="Nombre"
+                          id="nombre"
                           placeholder="Nombre"
+                          value={nombre}
+                          onChange={(e) => setNombre(e.target.value)}
                           required
                         ></input>
-                        
+
                         <input
-                          name="Email"
+                          name="email"
                           type="email"
                           className="form-control mt-2"
-                          id="Email"
+                          id="email"
                           placeholder="Correo Electrónico"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           required
-                          ></input>
-                          
+                        ></input>
+
                         <input
-                          name="Telefono"
+                          name="telefono"
                           type="number"
                           className="form-control mt-2"
-                          id="Telefono"
+                          id="telefono"
                           placeholder="Numero de telefono"
+                          value={telefono}
+                          onChange={(e) => setTelefono(e.target.value)}
                           required
-                          ></input>
-                          
+                        ></input>
+
                         <textarea
-                          name="Menesaje"
+                          name="mensaje"
                           className="form-control descripcion-pregunta my-2"
-                          id="Menesaje"
+                          id="mensaje"
                           cols="30"
                           rows="7"
-                          placeholder="Menesaje..."
+                          placeholder="Mensaje..."
+                          value={mensaje}
+                          onChange={(e) => setMensaje(e.target.value)}
                           required
                         ></textarea>
-                        
+
                         <button
                           className="btn btnhover direcciones  ultimocolor w-70  mt-30 p-2"
                           type="submit"

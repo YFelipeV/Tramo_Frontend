@@ -125,7 +125,17 @@ body {
 .badge {
   font-size: clamp(14px, 1vw, 20px);
   max-width: 355px;
+  
 }
+
+@media (min-width: 1800px) {
+  .badge {
+    font-size: clamp(14px, 1vw, 20px);
+    max-width: 400px;
+    
+  }
+}
+
 .maquina {
   display: block;
   white-space: nowrap;

@@ -52,10 +52,10 @@ function Home() {
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
       </Helmet>
-      <section className="index_inicio fond touch1  " id="home ">
+      <section className="index_inicio fond touch1 py-md-5 " id="home ">
         <div className="w-100 px-5 mt-5 container   ">
           <div
-            className="row align-items-center mt-5   w-100  "
+            className="row align-items-center mt-5 py-md-5   w-100  "
             data-aos="fade-up"
           >
             <div className="col-md-3 arreglar3   mt-5 col-lg-6 order-md-1 text-center ">

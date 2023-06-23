@@ -66,9 +66,9 @@ function Cliente({ getid }) {
                     }
                   });
                 }}
-                className="btn btn-primary"
+                className="btn bg-red text-center mx-auto"
               >
-                Confirmar Rechazo y enviar motivo
+                Inhabilitar y enviar motivo
               </button>
             </div>
           </div>

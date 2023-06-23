@@ -2015,12 +2015,6 @@ td {
     background-color: #e79d27fb;
     box-sizing: border-box;
   }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-  }
   .movil {
     height: 100%;
   }

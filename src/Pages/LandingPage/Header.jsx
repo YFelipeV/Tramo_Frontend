@@ -92,7 +92,7 @@ function Header() {
               <div className="ps-lg-3">
                 <NavLink
                   to={"/login"}
-                  className="btn btn-lg btn-primary rounded-pill mx-1 order-0 fs-5 me-5"
+                  className="btn btn-lg btn-primary rounded-pill mx-1 order-0 fs-6 me-5"
                 >
                   Inicio Sesion
                 </NavLink>
