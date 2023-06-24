@@ -1,8 +1,8 @@
 import felipeD from "../../assets/Integrantes/Perfil_SF1-01.png";
-import carlos from "../../assets/Integrantes/Carlos_SF-01.png";
+import carlos from "../../assets/Integrantes/Carlos.png";
 
 import jhon from "../../assets/Integrantes/JhonSF.png";
-import felipeS from "../../assets/Integrantes/SeguraSF.png";
+import felipeS from "../../assets/Integrantes/SeguraF.png";
 
 import yonathan from "../../assets/Integrantes/YonatanSF.png";
 import hernan from "../../assets/Integrantes/Hernan_sf.png";
@@ -271,15 +271,6 @@ function IntegrantesSliderGrande() {
                       </li>
                       <li>
                         <a
-                          className=" bg-yellow instagram"
-                          target="_blank"
-                          href=""
-                        >
-                          <img src={ins} className=" p-2 rounded mb-2" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
                           className=" bg-yellow facebook"
                           target="_blank"
                           href="https://www.facebook.com/Yonatan.suarez08"
@@ -321,15 +312,7 @@ function IntegrantesSliderGrande() {
                           />
                         </a>
                       </li>
-                      <li>
-                        <a
-                          className=" bg-yellow instagram"
-                          target="_blank"
-                          href=""
-                        >
-                          <img src={ins} className=" p-2 rounded mb-2" alt="" />
-                        </a>
-                      </li>
+              
                       <li>
                         <a
                           className=" bg-yellow facebook"

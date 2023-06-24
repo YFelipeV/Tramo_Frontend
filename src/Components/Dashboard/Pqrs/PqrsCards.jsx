@@ -8,9 +8,12 @@ function PqrsCards({ data }) {
     setSelectedPqrsId(pqrsId);
   };
 
+  // Invertir el orden de la matriz data
+  const reversedData = [...data].reverse();
+
   return (
     <>
-      {data.map(({ usuario, pqrsItem, _id }) => (
+      {reversedData.map(({ usuario, pqrsItem, _id }) => (
         <tr key={_id}>
           <td className="text-center pt-3 filas_info_corta">
             {usuario.nombrePNA
@@ -21,7 +24,7 @@ function PqrsCards({ data }) {
               ? usuario.nombreEmpresa
               : ""}
           </td>
-          <td className=" pt-3 filas_info_corta">
+          <td className="pt-3 filas_info_corta">
             <div className="d-flex justify-content-center">
               {pqrsItem.tipo}
             </div>

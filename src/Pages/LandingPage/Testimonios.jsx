@@ -1,6 +1,6 @@
-import testimonio1 from "../../assets/icons/testimonio1.jpg";
-import testimonio2 from "../../assets/icons/testimonio2.jpg";
-import testimonio3 from "../../assets/icons/testimonio3.jpg";
+import testimonio1 from "../../assets/icons/test1.png";
+import testimonio2 from "../../assets/icons/test2.png";
+import testimonio3 from "../../assets/icons/test3.jpeg";
 import comillas from "../../assets/icons/comillas.png";
 function Testimonios() {
   return (
@@ -21,16 +21,18 @@ function Testimonios() {
                 <img className="comillas-img" src={comillas} alt="" />
                 <div className="card-body">
                   <p className="card-text px-5 mt-3 ">
-                    TRAMO es una buena idea para ayudar a mejor la forma en que
-                    se solicita un servicio de Transporte de carga, es de gran
-                    ayuda para el gremio de conductores, Desde que la uso han
-                    aumentado mis ingresos y todo el tiempo recibo solicitudes
-                    de nuevos clientes
+                    "Mi experiencia con TRAMO ha sido increíble. Esta plataforma
+                    revoluciona la solicitud de servicios de transporte de
+                    carga, beneficiando tanto a los conductores como a los
+                    usuarios. Desde que la adopté, mis ingresos se han
+                    incrementado y constantemente recibo nuevas solicitudes de
+                    clientes"
                   </p>
                 </div>
                 <img
                   src={testimonio1}
                   className="card-img-top m-auto w-25 rounded-circle"
+                  style={{ objectFit: "cover" }}
                   alt="..."
                 />
                 <h5 className="fw-bold text-center">Sebastian Herrera</h5>
@@ -46,11 +48,12 @@ function Testimonios() {
                 <img className="comillas-img" src={comillas} alt="" />
                 <div className="card-body">
                   <p className="card-text px-5 mt-3 ">
-                    TRAMO es una buena idea para ayudar a mejor la forma en que
-                    se solicita un servicio de Transporte de carga, es de gran
-                    ayuda para el gremio de conductores, Desde que la uso han
-                    aumentado mis ingresos y todo el tiempo recibo solicitudes
-                    de nuevos clientes
+                    "TRAMO ha transformado por completo mi experiencia como
+                    conductor. Ha revolucionado la forma en que se solicitan los
+                    servicios de carga, beneficiando tanto a conductores como a
+                    usuarios. Desde que la adopté, mis ingresos han aumentado
+                    significativamente y constantemente recibo nuevas
+                    solicitudes.
                   </p>
                 </div>
                 <img
@@ -71,11 +74,12 @@ function Testimonios() {
                 <img className="comillas-img " src={comillas} alt="" />
                 <div className="card-body">
                   <p className="card-text px-5  mt-3">
-                    TRAMO es una buena idea para ayudar a mejor la forma en que
-                    se solicita un servicio de Transporte de carga, es de gran
-                    ayuda para el gremio de conductores, Desde que la uso han
-                    aumentado mis ingresos y todo el tiempo recibo solicitudes
-                    de nuevos clientes
+                    "TRAMO ha cambiado por completo mi forma de trabajar como
+                    conductor. Ahora tengo más clientes y mis ingresos se han
+                    multiplicado. Esta plataforma es una auténtica revolución en
+                    el sector del transporte de carga. ¡No puedo estar más
+                    satisfecho con los resultados que he obtenido desde que la
+                    utilizo!"
                   </p>
                 </div>
                 <img
