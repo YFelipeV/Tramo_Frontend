@@ -149,7 +149,7 @@ function MasDatosInhabilitado({ data }) {
                             <tr>
                               <td className='subtitulo'>Numero Documento:</td>
                               <td>
-                                {conductor.tenedorInhabilitado.apellidoTE}
+                                {conductor.tenedorInhabilitado.NroDocumentoTE}
                               </td>
                             </tr>
                             <tr>

@@ -139,7 +139,7 @@ function MasDatos({ data }) {
                             </tr>
                             <tr>
                               <td className='subtitulo'>Numero Documento:</td>
-                              <td>{conductor.tenedor.apellidoTE}</td>
+                              <td>{conductor.tenedor.NroDocumentoTE}</td>
                             </tr>
                             <tr>
                               <td className='subtitulo'>Direccion residencia:</td>

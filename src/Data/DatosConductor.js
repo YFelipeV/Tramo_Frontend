@@ -18,7 +18,7 @@ export const CondutoresHabilitado = async (id) => {
     const { data } = await axios.get(
       `${URL}admin/conductoresHabilitados/${id}`
     );
-    console.log(data);
+    
     return data;
   } catch (error) {
     console.log(error);
@@ -39,7 +39,7 @@ export const CondutoresInhabilitado = async (id) => {
     const { data } = await axios.get(
       `${URL}admin/conductoresInhabilitados/${id}`
     );
-    console.log(data);
+    
     return data;
   } catch (error) {
     console.log(error);
