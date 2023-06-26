@@ -23,8 +23,11 @@ function HistorialCards() {
     <>
       {Historial.map(({ usuario, pedidoManifesto, index }) => (
         <tr key={index}>
-          <td className="text_movil filas_info_corta text-center pt-4 order-2" style={{ fontSize: "13px" }}>
-            {moment(pedidoManifesto.createdAt).format("DD-MM-YYYY HH:mm A")}
+          <td className="text_movil filas_info_corta text-center pt-4 order-2" >
+            {moment(pedidoManifesto.createdAt).format("HH:mm A")}
+          </td>
+          <td className="text_movil filas_info_corta text-center pt-4 order-2">
+            {moment(pedidoManifesto.createdAt).format("DD-MM-YYYY")}
           </td>
 
           <td className="text_movil filas_info_corta text-center pt-4  order-2">
@@ -38,7 +41,7 @@ function HistorialCards() {
             {pedidoManifesto.carga.cantidadAproximada} kilos
           </td>
           <td className="text_movil filas_info_larga text-center pt-4">
-            {pedidoManifesto.carga.cuidadoCarga}
+            {pedidoManifesto.carga.producto}
           </td>
           <td className="text_movil  text-center pt-4">
             ${pedidoManifesto.costosViaje}

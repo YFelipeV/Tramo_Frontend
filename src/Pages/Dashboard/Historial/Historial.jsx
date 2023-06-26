@@ -25,6 +25,9 @@ function Historial() {
                 <thead>
                   <tr className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                   <th className="cabecera_info" style={{ fontSize: "14px" }}>
+                      HORA
+                    </th>
+                    <th className="cabecera_info" style={{ fontSize: "14px" }}>
                       FECHA
                     </th>
                     <th className="cabecera_info" style={{ fontSize: "14px" }}>
