@@ -1,8 +1,8 @@
 import felipeD from "../../assets/Integrantes/Perfil_SF1-01.png";
-import carlos from "../../assets/Integrantes/Carlos.png";
+import carlos from "../../assets/Integrantes/Carlos.jpg";
 
-import jhon from "../../assets/Integrantes/JhonSF.png";
-import felipeS from "../../assets/Integrantes/SeguraF.png";
+import jhon from "../../assets/Integrantes/JhonS.png";
+import felipeS from "../../assets/Integrantes/FelipeSF.png";
 
 import yonathan from "../../assets/Integrantes/YonatanSF.png";
 import hernan from "../../assets/Integrantes/Hernan_sf.png";
@@ -254,7 +254,7 @@ function IntegrantesSliderGrande() {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Yonatan David Pechene</h5>
-                    <h6 className="">Full Stack Developer</h6>
+                    <h6 className="">Desarrollador Frontend Movil</h6>
                     <ul className="d-flex redes-integrantes justify-content-center">
                       <li>
                         <a
@@ -297,7 +297,7 @@ function IntegrantesSliderGrande() {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Hernan Dario Zuñiga</h5>
-                    <h6 className="">Full Stack Developer</h6>
+                    <h6 className="">Desarrollador Frontend Web</h6>
                     <ul className="d-flex redes-integrantes justify-content-center">
                       <li>
                         <a

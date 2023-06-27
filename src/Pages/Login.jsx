@@ -43,11 +43,11 @@ function Login() {
         <div className="row movil">
           <div className="col-sm-12 col-lg-6 colorlogin">
             <div className="card-body p-md-2 mx-md-4 movilP ">
-              <h4 className="mb-5 mt-3 text-center fw-bold opacity-50">
+              <h4 className="mb-5 mt-3 text-center fw-bold text-light">
                 Sesión De Administrador
               </h4>
               <form autoComplete="on" onSubmit={handle}>
-                <div className="form mb-4">
+                <div className="form mb-4 text-light">
                   <label className="form-label">Correo Electrónico</label>
                   <input
                     type="email"
@@ -60,7 +60,7 @@ function Login() {
                   />
                 </div>
 
-                <div className="form- mb-5">
+                <div className="form- mb-5 text-light">
                   <label className="form-label">Contraseña</label>
                   <input
                     type="password"
@@ -78,7 +78,7 @@ function Login() {
                     <img
                       src={loading}
                       style={{ width: "32px", scale:"1.5"}}
-                      className="loading-animation mx-auto"
+                      className="loading-animation mx-auto rounded-circle"
                       alt="Cargando..."
                     />
                   ) : (
