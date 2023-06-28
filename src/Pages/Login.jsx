@@ -1,7 +1,8 @@
 import logo from "../assets/icons/horizontal.jpg";
 import login from "../assets/ilustraciones/1.png";
 import loading from "../assets/icons/cargando.gif";
-import { useNavigate } from "react-router-dom";
+import back from "../assets/icons/back.png";
+import { Link, useNavigate } from "react-router-dom";
 import "../css/styleAdmin.css";
 import { useState } from "react";
 import { authUsuarios } from "../Data/Login";
@@ -43,6 +44,7 @@ function Login() {
         <div className="row movil">
           <div className="col-sm-12 col-lg-6 colorlogin">
             <div className="card-body p-md-2 mx-md-4 movilP ">
+             <a href="/" className="back"> <img src={ back} className=" back2" style={{width:"24px"}} alt="" /><span className="volver">Volver</span></a>
               <h4 className="mb-5 mt-3 text-center fw-bold text-light">
                 Sesión De Administrador
               </h4>

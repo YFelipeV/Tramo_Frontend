@@ -71,7 +71,7 @@ function Navbar() {
                     className="dropdown-item d-flex align-items-center"
                     onClick={() => {
                       localStorage.clear();
-                      return navigate("/");
+                      return location.href="/";
                     }}
                   >
                     <i className="bi bi-box-arrow-right"></i>

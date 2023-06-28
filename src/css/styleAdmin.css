@@ -1749,6 +1749,20 @@ td {
     padding: 0px;
     height: 50px;
   }
+  .back{
+  display: none;
+  }
+  .back2{
+    width: 10px;
+  }
+
+  .volver{
+  
+    font-size: 6px;
+    position: relative;
+    bottom: 20px;
+  }
+  
   .logo_tramo {
     background-image: url("../assets/icons/horizontal_movil.jpg");
     background-size: cover;
@@ -1815,6 +1829,7 @@ td {
     font-size: 14px;
     margin-bottom: 0px;
   }
+  
 
   .imagen-titulo {
     width: 30px;
@@ -2055,4 +2070,17 @@ td {
   100% {
     transform: translateY(0);
   }
+}
+.back{
+  position: relative;
+  top: 3px;
+  text-decoration: none;
+}
+.volver{
+  color: white;
+  position: relative;
+  top: 5px;
+  font-size: 18px;
+  left: 8px;
+  font-weight: 600
 }

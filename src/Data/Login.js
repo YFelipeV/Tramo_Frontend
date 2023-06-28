@@ -21,7 +21,8 @@ export const authUsuarios = async ({ correo, contrasena }, navigate) => {
         localStorage.setItem("token", authToken);
          const usuario=jwtDecode(authToken);
          localStorage.setItem("name", usuario.nameAdmin)
-        navigate("/dashboard");
+        location.href= "/dashboard";
+       
       });
     }
   } catch (error) {
