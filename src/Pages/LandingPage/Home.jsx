@@ -3,7 +3,7 @@ import "../../css/style.css";
 import imagen1me from "../../assets/ilustraciones/1.png";
 import imagen2me from "../../assets/ilustraciones/3.png";
 import imagen3me from "../../assets/ilustraciones/5.png";
-import wuawei from "../../assets/icons/huawey.jpg";
+import huawei from "../../assets/icons/huawey.jpg";
 import imagen2 from "../../assets/icons/arrow-right.png";
 import company_1 from "../../assets/sponsor/company-1.png";
 import company_2 from "../../assets/sponsor/company-2.png";
@@ -16,6 +16,7 @@ import icon3 from "../../assets/icons/vector.png";
 import acerca from "../../assets/ilustraciones/acerca.png";
 import appstore from "../../assets/icons/app-store.png";
 import playstore from "../../assets/icons/google-play.png";
+import apk from "../../assets/icons/apk.png";
 
 
 import { BrowserRouter as Router,  Link } from 'react-router-dom';
@@ -492,27 +493,28 @@ function Home() {
               </p>
               
               <div className=" justify-content-center d-md-inline-block columna centrar">
-                <Link  className="pe-2 pe-sm-3 pe-md-4" href="!#">
+                <Link  className="pe-2 pe-sm-3 pe-md-4" to={"https://play.google.com/store/games?hl=es_CO&gl=US&pli=1"} target="_blank">
                 <img
                     className="w-sm-50 w-md-50 playstore"
                     src={playstore}
                     alt=""
                   ></img>
                 </Link>
-                <Link  className="pe-2 pe-sm-3 pe-md-4" href="!#">
+                <Link  className="pe-2 pe-sm-3 pe-md-4" to={"https://www.apple.com/co/app-store/"} target="_blank">
                 <img
                     className="w-sm-50 w-md-50 appstore"
                     src={appstore}
                     alt=""
                   ></img>
                 </Link>
-                <Link className="pe-2 pe-sm-3 pe-md-4 " href="!#">
+                <Link className="pe-2 pe-sm-3 pe-md-4 " to="https://drive.google.com/uc?export=download&id=1ty0XKdfloqcUf-zoPsQ69zYXnpJnb8bM" target="_blank">
                 <img
                     className="w-sm-50 w-md-50 wuawei  "
-                    src={wuawei}
+                    src={apk}
                     alt=""
                   ></img>
                 </Link>
+               
                
               </div>
              
