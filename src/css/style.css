@@ -467,9 +467,7 @@ ul {
   width: 12px;
   background-color: rgb(244, 244, 244);
 }
-body{
-  pointer-events: none;
-}
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #161627;
@@ -1000,4 +998,7 @@ body{
 .apk{
   width: 7.8%;
   flex-direction: column;
+}
+.table-cliente{
+  overflow: auto;
 }
