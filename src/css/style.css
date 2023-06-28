@@ -467,7 +467,9 @@ ul {
   width: 12px;
   background-color: rgb(244, 244, 244);
 }
-
+body{
+  pointer-events: none;
+}
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #161627;
