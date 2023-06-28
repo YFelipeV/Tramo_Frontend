@@ -564,13 +564,9 @@ function MasDatosInhabilitado({ data }) {
                                   confirmButtonText: "Si",
                                 }).then((response) => {
                                   if (response.isConfirmed) {
-                                    Swal.fire({
-                                      icon: "success",
-                                      title: "Habilitado Correctamente",
-                                    });
-                                    button: HabilitarConductor(
-                                      conductor.unicoConductorInhabilitado._id
-                                    );
+                                    
+                                     HabilitarConductor(
+                                      conductor.unicoConductorInhabilitado._id);
                                   }
                                 });
                               }}

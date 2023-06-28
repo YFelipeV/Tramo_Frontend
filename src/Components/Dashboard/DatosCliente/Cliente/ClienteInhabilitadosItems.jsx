@@ -106,12 +106,8 @@ function ClienteInhabilitadosItems({ ClienteInhabilitado }) {
                         confirmButtonText: "Si",
                       }).then((response) => {
                         if (response.isConfirmed) {
-                          Swal.fire({
-                            icon: "success",
-                            title: "Inhabilitado Correctamente",
-                            timer: "2000",
-                          });
-                          button: habilitarCliente(_id);
+                          
+                           habilitarCliente(_id);
                         }
                       })
                     }

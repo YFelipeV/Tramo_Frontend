@@ -54,19 +54,15 @@ function Empresa({ getid }) {
                 type="submit"
                 onClick={() => {
                   Swal.fire({
-                    title: "¿Seguro que desea Inhabilitar el conductor?",
+                    title: "¿Seguro que desea Inhabilitar  al cliente ?",
                     icon: "question",
                     showDenyButton: true,
                     denyButtonText: "No",
                     confirmButtonText: "Si",
                   }).then((response) => {
                     if (response.isConfirmed) {
-                      Swal.fire({
-                        icon: "success",
-                        title: "Inhabilitado Correctamente",
-                        timer: "2000",
-                      });
-                      button: InhabilitarEmpresa(data,getid);
+                     
+                       InhabilitarEmpresa(data,getid);
                     }
                   });
                 }}

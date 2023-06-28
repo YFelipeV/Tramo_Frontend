@@ -20,6 +20,8 @@ function ItemsHabilitados() {
     setdata(response);
   };
 
+  console.log(datosConductor);
+  
   return (
     <>
       {loadingconductor ? (

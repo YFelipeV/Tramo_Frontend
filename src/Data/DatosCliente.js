@@ -33,14 +33,23 @@ export const InhabilitarEmpresa = async (data,getid) => {
       { motivoInhabilitadoPJU }
     );
     if (response.status === 200) {
-      location.reload();
-      return response;
+      Swal.fire({
+        icon: "success",
+        title: "Inhabilitado Correctamente",
+        showConfirmButton:false,
+
+        timer: "2000",
+      }).then(()=>{
+        location.reload();
+
+      })
+      
     }
   } catch (error) {
-    if (error.response.data) {
+    if (error.response.status === 400) {
       Swal.fire({
         icon: "error",
-        title: response.data,
+        title: error.response.data,
       });
     }
   }
@@ -66,8 +75,17 @@ export const habilitarEmpresa = async (_id) => {
       ` ${URL}admin/datosClientesEmpresaIN/${_id}`
     );
     if (response.status === 200) {
-      location.reload();
-      return response;
+      Swal.fire({
+        icon: "success",
+        title: "Habilitado Correctamente",
+        showConfirmButton:false,
+
+        timer: "2000",
+      }).then(()=>{
+        location.reload();
+
+      })
+      
     }
   } catch (error) {
     if (error.response.data) {
@@ -106,16 +124,23 @@ export const InhabilitarCliente = async (motivoInhabilitadoPNA, getid) => {
       `${URL}admin/datosClientesNaturalHB/${getid}`,
       { motivoInhabilitadoPNA }
     );
-
+      console.log(response);
     if (response.status === 200) {
+      Swal.fire({
+        icon: "success",
+        title: "Inhabilitado Correctamente",
+        showConfirmButton:false,
+        timer:1500,
+      }).then(()=>{
       location.reload();
-      return response;
+
+      })
     }
   } catch (error) {
-    if (error.response.data) {
+    if (error.response.status===400) {
       Swal.fire({
         icon: "error",
-        title: response.data,
+        title: error.response.data,
       });
     }
   }
@@ -144,7 +169,17 @@ export const habilitarCliente = async (_id) => {
     console.log(response);
     if (response.status === 200) {
       location.reload();
-      return response;
+      Swal.fire({
+        icon: "success",
+        title: "Habilitado Correctamente",
+        timer: "2000",
+        showConfirmButton:false,
+        timer:1500,
+      }).then(()=>{
+        location.reload();
+      })
+      
+      
     }
   } catch (error) {
     if (error.response.data) {

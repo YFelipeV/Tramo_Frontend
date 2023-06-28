@@ -42,6 +42,7 @@ function Cliente({ getid }) {
                   id="respuesta-pqrs"
                   rows="10"
                   onChange={(e) => setmotivoInhabilitadoPNA(e.target.value)}
+                  required
                 ></textarea>
               </form>
             </div>
@@ -50,19 +51,14 @@ function Cliente({ getid }) {
                 type="submit"
                 onClick={() => {
                   Swal.fire({
-                    title: "¿Seguro que desea Inhabilitar el conductor?",
+                    title: "¿Seguro que desea Inhabilitar el cliente?",
                     icon: "question",
                     showDenyButton: true,
                     denyButtonText: "No",
                     confirmButtonText: "Si",
                   }).then((response) => {
                     if (response.isConfirmed) {
-                      Swal.fire({
-                        icon: "success",
-                        title: "Inhabilitado Correctamente",
-                        timer: "2000",
-                      });
-                      button: InhabilitarCliente(motivoInhabilitadoPNA, getid);
+                       InhabilitarCliente(motivoInhabilitadoPNA, getid);
                     }
                   });
                 }}

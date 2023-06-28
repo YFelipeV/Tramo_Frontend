@@ -54,14 +54,21 @@ export const InhabilitarConductor = async (motivoInhabilitadoCON, getid) => {
     );
 
     if (response.status === 200) {
-      location.reload();
-      return response;
+      Swal.fire({
+        icon: "success",
+        title: "Inhabilitado Correctamente",
+        timer:1500,
+        showConfirmButton:false,
+      }).then(()=>{
+        location.reload();
+
+      })
     }
   } catch (error) {
-    if (error.response.data) {
+    if (error.response.status === 400) {
       Swal.fire({
         icon: "error",
-        title: response.data,
+        title: error.response.data,
       });
     }
   }
@@ -72,8 +79,16 @@ export const HabilitarConductor = async (_id) => {
       `${URL}admin/habilitarConductor/${_id}`
     );
     if (response.status === 200) {
-      location.reload();
-      return response;
+      Swal.fire({
+        icon: "success",
+        title: "Habilitado Correctamente",
+        timer:1500,
+        showConfirmButton:false,
+      }).then(()=>{
+        location.reload();
+
+      })
+ 
     }
   } catch (error) {
     if (error.response.data) {
