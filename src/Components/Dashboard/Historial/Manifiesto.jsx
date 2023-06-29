@@ -382,7 +382,7 @@ function Manifiesto() {
               <p>KILOGRAMOS</p>
             </td>
             <td>
-              <p>{carga.cantidadAproximada * 1000}</p>
+              <p>{carga.cantidadAproximada}</p>
             </td>
             <td>
               <p>{carga.empaque}</p>
