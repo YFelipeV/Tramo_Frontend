@@ -434,7 +434,7 @@ function Manifiesto() {
               <p className="subtitulos">FECHA</p>
             </td>
             <td rowSpan={2}>
-              <p>02/09/2022</p>
+              <p>{fecha}</p>
             </td>
             <td colSpan={2} rowSpan={6}>
               <p>{carga.observaciones}</p>
